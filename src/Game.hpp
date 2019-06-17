@@ -2,6 +2,7 @@
 #define Game_hpp
 
 #include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
 #include <iostream>
 
 class Game {
@@ -19,6 +20,7 @@ public:
   bool running() { return isRunning; }
 private: 
   bool isRunning;
+  int count = 0;
   SDL_Window *window;
   SDL_Renderer *renderer;
   
