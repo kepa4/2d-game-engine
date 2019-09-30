@@ -55,7 +55,8 @@ void Game::handleEvents()
     case SDL_QUIT:
       isRunning = false;
       break;
-
+    case SDL_KEYDOWN:
+      std::cout << "key pressed" << std:: endl;
     default: 
       break;
   }
